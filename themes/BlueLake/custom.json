@@ -1,0 +1,11 @@
+{
+	"banner":"images/ancient-door-1-1229930.jpg",
+	"favicon":"css/images/favicon.png",
+	"url":"source/css/images",
+	"alink":["footlinks","links"],
+	"link":[{
+	"title":"",
+	"url":""
+	}],
+	"color":["#40759b","#000000","#003366","#0066CC","#006633","#333366","#663366","#330033"]
+}
