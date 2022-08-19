@@ -1,0 +1,29 @@
+<footer id="footer">
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      <p>
+        <a href="<%= config.url %>"><%= config.title %></a>
+		<% if (theme.footlinks && theme.footlinks.length){ %>
+		<% theme.footlinks.forEach(function(item){ %>
+                    <span> | </span><a href="<%- item.url %>" class="animsition-link"><%= item.title %></a>
+                    <% }); %>
+		<% } %>
+      </p>
+      <% if (theme.busuanzi){ %>
+        <p>
+          <i class="fa fa-visitors"></i>
+          <i id="busuanzi_container_site_uv"><i id="busuanzi_value_site_uv"></i></i>
+          ，
+          <i class="fa fa-views"></i>
+          <i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>
+        </p>
+      <% } %>
+      <p>
+        <span>Copyright &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>.</span>
+      </p>
+    </div>
+  </div>
+</footer>
