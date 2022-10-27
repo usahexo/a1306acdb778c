@@ -8,7 +8,7 @@
         <a href="<%= config.url %>"><%= config.title %></a>
 		<% if (theme.footlinks && theme.footlinks.length){ %>
 		<% theme.footlinks.forEach(function(item){ %>
-                    <span> | </span><a href="<%- item.url %>" class="animsition-link"><%= item.title %></a>
+                    <span> | </span><a href="<%- item.url %>" class="animsition-link" rel="nofollow"><%= item.title %></a>
                     <% }); %>
 		<% } %>
       </p>
