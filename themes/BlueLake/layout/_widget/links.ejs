@@ -5,7 +5,7 @@
       <ul>
       <% theme.links.forEach(function(link){ %>
         <li>
-          <a href="<%- url_for(link.url) %>"><%= link.title || '(no title)' %></a>
+          <a href="<%- url_for(link.url) %>" rel="nofollow"><%= link.title || '(no title)' %></a>
         </li>
       <% }) %>
       </ul>
